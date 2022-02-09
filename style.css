@@ -120,9 +120,6 @@ a:hover{
 }
 .image-credit{
     font-size: .7rem;
-    top: 95%;
-}
-.llama{
-    height: 20px;
-    width: 20px;
+    top: 95.6%;
+    height: fit-content;
 }
