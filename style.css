@@ -1,0 +1,32 @@
+:root{
+    --bg-color: #F50057;
+    --text-color: #111111;
+    --reg-font-size: 24px;
+    font-size: var(--reg-font-size);
+}
+*{
+    color: var(--text-color);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-color);
+    display: flex;
+}
+.left-side-screen{
+    height: 100vh;
+    width: 70vw;
+}
+.right-side-screen{
+    background-image: url('llama.jpeg');
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 1px solid black;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
