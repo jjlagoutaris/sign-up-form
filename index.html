@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="form.png" type="image/x-icon">
     <!-- icon credit: <a href="https://www.flaticon.com/free-icons/form" title="form icons">Form icons created by Freepik - Flaticon</a>-->
 </head>
@@ -24,12 +27,12 @@
 
                 <div class="input">
                     <label for="fName">First Name</label>
-                    <input type="text" name="fName" id="fName" required>
+                    <input type="text" name="fName" id="fName" minlength="2" required>
                 </div>
 
                 <div class="input">
                     <label for="lName">Last Name</label>
-                    <input type="text" name="lName" id="lName" required>
+                    <input type="text" name="lName" id="lName" minlength="2" required>
                 </div>
 
                 <div class="input">
@@ -39,17 +42,18 @@
 
                 <div class="input">
                     <label for="phoneNumber">Phone Number</label>
-                    <input type="tel" name="phoneNumber" id="phoneNumber" required>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" 
+                    minlength = "9" maxlength = "9" required>
                 </div>
 
                 <div class="input">
                     <label for="pwd">Password</label>
-                    <input type="password" name="pwd" id="pwd" required>
+                    <input type="password" name="pwd" id="pwd" minlength="5" required>
                 </div>
 
                 <div class="input">
                     <label for="pwdConf">Confirm Password</label>
-                    <input type="password" name="pwdConf" id="pwdConf" required>
+                    <input type="password" name="pwdConf" id="pwdConf" minlength="5" required>
                 </div>
             </fieldset>
         </form>

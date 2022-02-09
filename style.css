@@ -1,7 +1,9 @@
 :root{
     --bg-color: rgb(225,225,225);
+    --off-color: #c01d56;
     --text-color: #111111;
-    font-size: 32px;
+    font-size: 24px;
+    font-family: 'Rock Salt', cursive;
 }
 *{
     color: var(--text-color);
@@ -52,13 +54,23 @@ input{
     height: 35px;
     border-radius: 0.2rem;
 }
+input:invalid{
+    border: 2px solid red;
+}
+input:focus{
+    outline: none;
+    border: 2px solid lightblue;
+}
+input:valid{
+    border: 2px solid green;
+}
 .create-account{
     position: relative;
     font-size: .8rem;
     top: -5%;
 }
 .submit{
-    background-color: olive;
+    background-color: var(--off-color);
     color: white;
     font-weight: 900;
     font-size: 0.6rem;
@@ -75,5 +87,11 @@ input{
 }
 a{
     text-decoration: none;
-    color: olive;
+    color: var(--off-color);
+}
+.submit:hover{
+    background-color: aqua;
+}
+a:hover{
+    border: 2px solid black;
 }
