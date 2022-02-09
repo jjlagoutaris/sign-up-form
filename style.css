@@ -1,7 +1,7 @@
 :root{
-    --bg-color: cyan;
+    --bg-color: rgb(225,225,225);
     --text-color: #111111;
-    font-size: 24px;
+    font-size: 32px;
 }
 *{
     color: var(--text-color);
@@ -24,18 +24,47 @@ body{
     align-items: center;
 }
 .header, .create-account, fieldset{
-    width: 40vw;
+    width: 50vw;
 }
 .header{
-    font-size: 1.5rem;
+    background-color: aliceblue;
+    font-weight: 700;
+    box-shadow: 20px 15px 15px;
 }
 fieldset{
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     display: flex;
-    flex-flow: row wrap;
-    height: 20vh;
-    width: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 25vh;
+    width: 60vw;
     background-color: white;
+}
+.input{
+    margin-left: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5px;
+}
+input{
+    width: 130%;
+    height: 35px;
+    border-radius: 0.2rem;
+}
+.create-account{
+    position: relative;
+    font-size: .8rem;
+    top: -5%;
+}
+.submit{
+    background-color: olive;
+    color: white;
+    font-weight: 900;
+    font-size: 0.6rem;
+    margin: 1rem 0;
+    padding: .4rem 1.3rem;
+    border-radius: .2rem;
 }
 .right-side-screen{
     background-image: url('llama.jpeg');
@@ -43,4 +72,8 @@ fieldset{
     background-position: center;
     height: 100vh;
     width: 40vw;
+}
+a{
+    text-decoration: none;
+    color: olive;
 }
